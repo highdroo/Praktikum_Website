@@ -1,17 +1,16 @@
-
-
-
-
-
-:root{
-    --koala-skin:grey;
+:root {
+    --koala-skin: grey;
+    --koala-eye: white;
+    --koala-pupille: black;
 }
+
 .koala {
     margin: 0 auto;
     width: 300px;
     height: 400px;
-    border: 1px solid black;    position: relative;
-    left:200px;
+    border: 1px solid black;
+    position: relative;
+    left: 200px;
 }
 
 .stamm {
@@ -19,87 +18,250 @@
     width: 100px;
     background: linear-gradient(rgb(204, 102, 0), rgb(102, 51, 0));
     position: absolute;
-    left: 50%;    
+    left: 50%;
 
-    transform: skew(-44deg,0deg);
+    transform: skew(-44deg, 0deg);
 }
 
 .koerper {
     width: 250px;
     height: 200px;
     border-radius: 50%;
-    background-color:var(--koala-skin);
+    background-color: var(--koala-skin);
     position: relative;
-    top:40%;
+    top: 40%;
     margin-right: 10px;
-    margin-left:10px;
+    margin-left: 10px;
     z-index: 1;
-    
+
 }
-.koalabeinleft{
-    width:50px;
+
+.koalabeinleft {
+    width: 50px;
     height: 150px;
-    background:linear-gradient(gray, rgb(128,128,128),rgb(64,64,64));
-    position:absolute;
-    top:80%;
-    transform:rotate(-40deg);
-    left:125px;
+    background: linear-gradient(gray, rgb(128, 128, 128), rgb(64, 64, 64));
+    position: absolute;
+    top: 80%;
+    transform: rotate(-40deg);
+    left: 125px;
     border-bottom-right-radius: 30%;
-    border-bottom-left-radius: 30%;;
+    border-bottom-left-radius: 30%;
+    ;
     border-top-left-radius: 40%;
 
 }
-.koalabeinright{
-    width:50px;
-    height: 80px;
-    background:linear-gradient(gray, rgb(128,128,128),rgb(64,64,64));
-    position:absolute;
-    top:75%;
-    transform:rotate(-40deg);
-    left:230px;
+
+.koalabeinright {
+    width: 50px;
+    height: 87px;
+    background: linear-gradient(gray, rgb(128, 128, 128), rgb(64, 64, 64));
+    position: absolute;
+    top: 75%;
+    transform: rotate(-40deg);
+    left: 230px;
     border-bottom-right-radius: 30%;
-    border-bottom-left-radius: 30%;;
+    border-bottom-left-radius: 30%;
+    ;
     border-top-left-radius: 40%;
 }
-.koalaarmrechts{
-    width:50px;
+
+.koalaarmrechts {
+    width: 50px;
     height: 160px;
-    background:linear-gradient(gray, rgb(128,128,128),rgb(64,64,64));
-    position:absolute;
-    top:40%;
-    transform:rotate(-50deg);
-    left:230px;
+    background: linear-gradient(gray, rgb(128, 128, 128), rgb(64, 64, 64));
+    position: absolute;
+    top: 40%;
+    transform: rotate(-50deg);
+    left: 230px;
     border-bottom-right-radius: 30%;
-    border-bottom-left-radius: 30%;;
+    border-bottom-left-radius: 30%;
+    ;
     border-top-right-radius: 40%;
 }
-.koalawinkenderoberarm{
-    width:40px;
-    height: 100px;
-    background-color:var(--koala-skin);
-    position:absolute;
-    transform:rotate(99deg);
+
+.koalawinkenderoberarm {
+    width: 40px;
+    height: 110px;
+    background-color: var(--koala-skin);
+    position: absolute;
+    transform: rotate(99deg);
     border-bottom-right-radius: 30%;
-    border-bottom-left-radius: 30%;;
+    border-bottom-left-radius: 30%;
+    ;
     border-top-left-radius: 40%;
     right: 80%;
     top: 70%;
     transform-origin: top left;
-    transform:rotate(130deg) scaleX(-1);
+    transform: rotate(130deg) scaleX(-1);
     animation: 5s linear infinite wave;
 }
 
-@keyframes wave{
-    10%{
+@keyframes wave {
+    10% {
         transform: rotate(110deg) scaleX(-1)
     }
-    20%{
+
+    20% {
         transform: rotate(130deg) scaleX(-1)
     }
-    30%{
+
+    30% {
         transform: rotate(110deg) scaleX(-1)
     }
-    40%{
-        transform:rotate(130deg) scaleX(-1)
-    }    
- }
+
+    40% {
+        transform: rotate(130deg) scaleX(-1)
+    }
+}
+
+.koalakopf {
+    width: 200px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: var(--koala-skin);
+    position: relative;
+    top: -40%;
+    margin-right: 10px;
+    margin-left: 10px;
+    z-index: 1;
+}
+
+.koalaaugeleft {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: black;
+    position: relative;
+    top: -63%;
+    z-index: 1;
+    left: 54px;
+}
+
+.koalaaugeright {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: black;
+    position: relative;
+    top: -68%;
+    z-index: 1;
+    left: 132px;
+}
+
+.koalapurpile {
+    width: 10px;
+    height: 10px;
+    background: radial-gradient(circle, rgba(241, 110, 17, 1) 14%, rgba(171, 98, 42, 1) 70%, rgba(142, 89, 43, 1) 100%);
+    position: relative;
+    top: -72%;
+    border-radius: 50%;
+    right: -138px;
+    z-index: 1;
+}
+
+.koalapurpillelinks {
+    width: 10px;
+    height: 10px;
+    background: radial-gradient(circle, rgba(241, 110, 17, 1) 14%, rgba(171, 98, 42, 1) 70%, rgba(142, 89, 43, 1) 100%);
+    position: relative;
+    top: -74%;
+    border-radius: 50%;
+    right: -60px;
+    z-index: 1;
+
+}
+
+.koalaohren {
+    width: 50px;
+    height: 60px;
+    background: radial-gradient(circle, rgba(125, 125, 125, 1) 49%, rgba(25, 25, 24, 1) 100%);
+    top: -400px;
+    ;
+    position: relative;
+    z-index: -1;
+    border-radius: 50% 50% 0 50%;
+
+
+
+
+}
+
+.koalaohrenright {
+    width: 50px;
+    height: 60px;
+    background: radial-gradient(circle, rgba(125, 125, 125, 1) 49%, rgba(25, 25, 24, 1) 100%);
+    top: -460px;
+    ;
+    position: relative;
+    z-index: -1;
+    border-radius: 50% 50% 50% 0%;
+    left: 170px;
+
+}
+
+.koalanase {
+    width: 40px;
+    height: 60px;
+    background-color: var(--koala-pupille);
+    position: relative;
+    bottom: 100%;
+    z-index: 1;
+    left: 85px;
+    border-radius: 0 0 100% 100%;
+
+
+}
+
+.text {
+    color: red;
+    z-index: 1;
+    position: relative;
+    bottom: 350px;
+    left: 100px;
+    background-color: var(--koala-skin);
+    border: 2px solid var(--koala-skin);
+    width: 20px;
+
+}
+
+.texthover {
+    background-color: green;
+    color: green;
+}
+
+.koala .text {
+    color: transparent;
+}
+
+.koala:hover .text {
+    color: black;
+    transition: 2s;
+    animation-name: shakeX;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+}
+
+/*animate__shakeX*/
+.Hinweisbauch {
+    width: 200px;
+    height: 2px;
+    background-color: black;
+    position: relative;
+    bottom: 520px;
+    z-index: 1;
+    transform: rotate(25deg);
+    right: 80px;
+
+}
+
+.Hinweistext {
+    width: 190px;
+    height: 30px;
+    background-color: transparent;
+    border: 2px dashed red;
+    position: relative;
+    bottom: 580px;
+    right: 265px;
+    
+}
