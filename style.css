@@ -75,30 +75,20 @@
 }
 .koalawinkenderoberarm{
     width:40px;
-    height: 80px;
+    height: 100px;
     background-color:var(--koala-skin);
     position:absolute;
     transform:rotate(99deg);
     border-bottom-right-radius: 30%;
     border-bottom-left-radius: 30%;;
     border-top-left-radius: 40%;
-    right:95%;
-    top: 60%;
+    right: 80%;
+    top: 70%;
+    transform-origin: top left;
+    transform:rotate(130deg) scaleX(-1);
+    animation: 5s linear infinite wave;
 }
-.koalawinkenderunterarm{
-    width:40px;
-    height: 100px;
-    background-color:var(--koala-skin);
-    position:absolute;
-    transform:rotate(110deg);
-    border-radius: 30% 30% 70% 20%;
-    top: 200px;
-    right:115%; 
-    transform-origin: top-left; 
-    transform: rotate(130deg) scaleX(-1);
-    animation:3s linear infinite wave;
 
-}
 @keyframes wave{
     10%{
         transform: rotate(110deg) scaleX(-1)
