@@ -5,7 +5,7 @@ answerElement.style.color ="red";
 
 answerButton.addEventListener("click", function () {
     answerElement.innerHTML = answer;
-    
+
     const q1 = document.getElementsByName("q1");
     console.log(q1);
     q1.forEach((e) => {
@@ -65,3 +65,17 @@ answerElement.innerHTML ="Du Hast "+rightanswers + " Fragen richtig beantwortet"
 rightanswers =0;
 
 });
+const clearbutton = document.getElementsById("clear");
+answerElement.style.color="transparent";
+
+answer.button.addEventListener("click",function(){
+
+    const q1 = document.getElementsByName(q1);
+    console.log(q1);
+    q1.forEach((e)=>{
+        console.log(e);
+        if(e.style == true){
+            if(e.value =="red"){}
+        }
+    })
+})
