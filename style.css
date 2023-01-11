@@ -368,10 +368,11 @@ header{
  .auswahlbutton{
     width:100px;
     background: linear-gradient(90deg, rgba(14,0,255,1) 13%, rgba(11,219,36,1) 65%);
-    color:black;
+    color:white;
     height:50px;
     font-size:10px;
     text-decoration:underline;
+    text-decoration-color: #000000;
 }
 .button{
     width:300px;
@@ -400,4 +401,4 @@ header{
     font-size:10px;
     left: 310px;
     bottom:30px;
-}bgbg
+}
