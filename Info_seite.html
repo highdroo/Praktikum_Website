@@ -4,12 +4,12 @@
 <head>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="animation.css">
-  
+
   <meta charset="UTF-8">
   <title>Quiz seite rund um </title>
 </head>
 
-<body>
+<body id="hintergrund">
   <header>
     <div id="title">
       <h1>Meine Webseite</h1>
@@ -22,6 +22,27 @@
       </ul>
     </nav>
   </header>
+
+
+
+  <div>
+    <ul class="answer-list">
+      <li>
+        <label for="q4-q6">
+          <input type="radio" id="q4" name="q5" value="blue">blue
+        </label>
+      </li>
+      <li>
+        <label for="q4-q5">
+          <input type="radio" id="q5" name="q5" value="green">green
+        </label>
+      </li>
+    </ul>
+    <button id="auswahl" class="auswahlbutton">Hintergrund auswählen</button>
+    <button id ="weiße" class="auswahlbutton">Hintergrund auf weiß</button>
+  </div>
+
+
   <div class="grid-container ">
     <div class="spalte">
       <h2 class="Zwischenüberschrift1">Koalas Herkunft Australien</h2>
@@ -76,16 +97,16 @@
       <h1 class="Zwischenüberschrift1">Koala Quiz</h1>
       <div class="questionblock">
         <h2>Question 1</h2>
-        
-          <fieldset class="question" name="html-questione-one">Leben koalas in Ost Australien?</fieldset>
-        
+
+        <fieldset class="question" name="html-questione-one">Leben koalas in Ost Australien?</fieldset>
+
         <ul class="answer-list">
           <li>
             <label for="q1-a1">
-              
+
               <input type="radio" id="q1-a1" name="q1" value="true">
               ja
-            </legend>
+              </legend>
             </label>
           </li>
           <li>
@@ -101,15 +122,15 @@
       <div class="questionblock">
         <h2>Question 2</h2>
         <legend>
-        <fieldset class="question" name="html-questione-one">Kan man Koala Fleisch essen?</fieldset>
+          <fieldset class="question" name="html-questione-one">Kan man Koala Fleisch essen?</fieldset>
         </legend>
         <ul class="answer-list">
           <li>
             <label for="q1-a1">
-              
+
               <input type="radio" id="q2-a2" name="q2" value="false">
               ja
-              
+
             </label>
           </li>
           <li>
@@ -123,16 +144,16 @@
       </div>
       <div class="questionblock">
         <h2>Question 3</h2>
-        
-          <fieldset class="question" name="html-questione-one">Gibt es verschieden Arten von Koalas</fieldset>
-        
+
+        <fieldset class="question" name="html-questione-one">Gibt es verschieden Arten von Koalas</fieldset>
+
         <ul class="answer-list">
           <li>
             <label for="q1-a1">
-              
+
               <input type="radio" id="q1-a1" name="q3" value="true">
               ja
-            </legend>
+              </legend>
             </label>
           </li>
           <li>
@@ -144,14 +165,18 @@
           </fieldset>
         </ul>
       </div>
-    <button id="answer-button">Antworten prüfen</button>
-    <p id="answer"></p>
-<button id="clear">Antworten entfärben</button>
+      <p id="answer" name="antworten"></p>
+      <div class="wrapper">
+        <button id="answer-button" class="button">Antworten prüfen</button>
+        <button id="clear" class="button">Antworten entfärben</button>
+      </div>
 
-</div>
+
+    </div>
 
 
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
