@@ -154,3 +154,4 @@ randombutton.addEventListener("click", function () {
 //max 60000
 //min 50
 
+dxeded
