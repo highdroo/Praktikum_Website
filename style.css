@@ -282,6 +282,7 @@
     color: black;
 
 }
+/*-------------------------------------------------------------------------------------------------------*/
 #title {
     text-align: center;
   }
@@ -291,7 +292,7 @@
     text-decoration: none;
   }
 header{
-    background-color:rgb(95,98,83);
+    background-color:gray;
     box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 22px 13px 14px 0px rgba(0,0,0,0.35);
     height:130px;
 
@@ -352,7 +353,7 @@ header{
     margin-left: 20px;;
 }
 
-/* ----------------------------------------- */
+
 .zweitereihe{
     width:550px;
     height: 100vh;
@@ -367,14 +368,17 @@ header{
  .auswahlbutton{
     width:100px;
     background: linear-gradient(90deg, rgba(14,0,255,1) 13%, rgba(11,219,36,1) 65%);
-    color:white;
+    color:black;
+    height:50px;
+    font-size:10px;
+    text-decoration:underline;
 }
 .button{
     width:300px;
     height:80px;
     border-style: dashed;
-    border-color:red;
-    background-color: beige;
+    border-color:black;
+    background-color: orange;
     position: relative;
     margin: 10px;
     
@@ -391,3 +395,9 @@ header{
     flex-direction: column;
     margin-left: 150px;
     }
+.reglererklärung{
+    position: relative;
+    font-size:10px;
+    left: 310px;
+    bottom:30px;
+}
