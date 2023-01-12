@@ -4,6 +4,166 @@
     --koala-pupille: black;
 }
 
+@media only screen and (min-width: 600px) {
+
+    .koala .text,
+    .koala .link {
+        color: black;
+        transition: 2s;
+        animation-name: shakeX;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in;
+    }
+
+    .spalte,
+    .spalte .dumbthings {
+        color: black;
+        transition: 2s;
+        animation-name: pulse;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in;
+    }
+
+    .spalte .dumbthings {
+        color: black;
+        text-decoration: underline;
+    }
+
+    html,
+    body {
+
+        overflow-x: auto !important;
+        overflow-y: auto !important;
+
+    }
+
+    .spalte,
+    .spalte .dumbthings {
+        color: black;
+        transition: 2s;
+        animation-name: pulse;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in;
+    }
+
+    .spalte .dumbthings {
+        color: black;
+        text-decoration: underline;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    .koala .text,
+    .koala .link {
+        color: black;
+        transition: 2s;
+        animation-name: shakeX;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in;
+    }
+
+    .spalte,
+    .spalte .dumbthings {
+        color: black;
+        transition: 2s;
+        animation-name: pulse;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in;
+    }
+
+    .spalte .dumbthings {
+        color: black;
+        text-decoration: underline;
+    }
+
+    html,
+    body {
+
+        overflow-x: auto !important;
+        overflow-y: auto !important;
+
+    }
+
+    header {
+        width: 100%;
+    }
+
+    .spalte,
+    .spalte .dumbthings {
+        color: black;
+        transition: 2s;
+        animation-name: pulse;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in;
+    }
+
+    .spalte .dumbthings {
+        color: black;
+        text-decoration: underline;
+    }
+}
+
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    .koala .text,
+    .koala .link {
+        color: black;
+        transition: 2s;
+        animation-name: shakeX;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in;
+    }
+
+    .spalte,
+    .spalte .dumbthings {
+        color: black;
+        transition: 2s;
+        animation-name: pulse;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in;
+    }
+    .spalte,
+.spalte .dumbthings
+{
+    color:black;
+    transition:2s;
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-fill-mode:forwards;
+    animation-timing-function: ease-in;
+}
+
+.spalte:hover .dumbthings{
+    color:black;
+    text-decoration: underline;
+}
+    /*------------------------------------------------------------------------------*/
+    .spalte .dumbthings {
+        color: black;
+        text-decoration: underline;
+    }
+
+    html,
+    body {
+
+        overflow-x: auto !important;
+        overflow-y: auto !important;
+    }
+}
+
 .hintergrund1 {
     background-image: url('bild-11697h.jpg');
     background-repeat: no-repeat;
@@ -25,7 +185,7 @@
     width: 100px;
     background: linear-gradient(rgb(204, 102, 0), rgb(102, 51, 0));
     position: absolute;
-    left:63%;
+    left: 63%;
 
     transform: skew(-4deg, 0deg);
 }
@@ -68,7 +228,7 @@
     left: 230px;
     border-bottom-right-radius: 30%;
     border-bottom-left-radius: 30%;
-    
+
     border-top-left-radius: 40%;
 }
 
@@ -253,9 +413,10 @@
 .koala:hover .link {
     text-decoration: underline;
 }
-.link{
-    color:transparent;
- }
+
+.link {
+    color: transparent;
+}
 
 /*animate__shakeX*/
 .Hinweisbauch {
@@ -278,166 +439,192 @@
     position: relative;
     bottom: 580px;
     right: 265px;
-    text-decoration:underline;
+    text-decoration: underline;
     color: white;
 
 }
-/*-------------------------------------------------------------------------------------------------------*/
+
+html,
+body {
+
+    overflow-x: auto !important;
+    overflow-y: auto !important;
+
+}
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 #title {
     text-align: center;
-  }
-  
-  #navbar {
+}
+
+#navbar {
     text-align: right;
     text-decoration: none;
-  }
-header{
-    background-color:gray;
-    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 22px 13px 14px 0px rgba(0,0,0,0.35);
-    height:130px;
+}
+
+header {
+    background-color: gray;
+    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 22px 13px 14px 0px rgba(0, 0, 0, 0.35);
+    height: 130px;
 
 }
-.startseite{
-     text-decoration: underline;
-     color:#000000;
-     padding-right:20px;
-}
-.Praktikumablauf{
+
+.startseite {
     text-decoration: underline;
-    color:#000000;
-    padding-right:20px;
-}
-.spalte{
-    
-    
-    border: 2px solid black;
-    color:transparent;
-}
-.show-text{
-    color:black;
-}
-.Zwischenüberschrift1{
-    text-decoration:underline;
-}
-.koalasherkunft{
-    color:transparent;
+    color: #000000;
+    padding-right: 20px;
 }
 
-.dumbthings{
-    text-decoration: none;
-    color:transparent;
+.Praktikumablauf {
+    text-decoration: underline;
+    color: #000000;
+    padding-right: 20px;
 }
+
+.spalte {
+
+
+    border: 2px solid black;
+    color: transparent;
+}
+
+.show-text {
+    color: black;
+}
+
+.Zwischenüberschrift1 {
+    text-decoration: underline;
+}
+
+.koalasherkunft {
+    color: transparent;
+}
+
+.dumbthings {
+    text-decoration: none;
+    color: transparent;
+}
+
 .spalte:hover,
-.spalte:hover .dumbthings
-{
-    color:black;
-    transition:2s;
+.spalte:hover .dumbthings {
+    color: black;
+    transition: 2s;
     animation-name: pulse;
     animation-duration: 1s;
-    animation-fill-mode:forwards;
+    animation-fill-mode: forwards;
     animation-timing-function: ease-in;
 }
 
-.spalte:hover .dumbthings{
-    color:black;
+.spalte:hover .dumbthings {
+    color: black;
     text-decoration: underline;
 }
 
-.grid-container{
-    display: grid; /* Das Element wird zu einem Grid-Container */
-    grid-template-columns: 1fr 1fr 1fr; /* definiert drei gleich große Spalten */
+.grid-container {
+    display: grid;
+    /* Das Element wird zu einem Grid-Container */
+    grid-template-columns: 1fr 1fr 1fr;
+    /* definiert drei gleich große Spalten */
     column-gap: 20px;
     row-gap: 15px;
     padding: 20px 0 20px 0;
-    margin-right:20px;
-    margin-left: 20px;;
+    margin-right: 20px;
+    margin-left: 20px;
+    ;
 }
 
 
-.zweitereihe{
-    width:550px;
+.zweitereihe {
+    width: 550px;
     height: 100vh;
-    color:transparent;
+    color: transparent;
 
 }
 
 
- .answer-list{
-    list-style:none;
- }
- .auswahlbutton{
-    width:100px;
-    background: linear-gradient(90deg, rgba(96,255,0,1) 60%, rgba(14,0,255,1) 82%);
-    color:white;
-    height:50px;
-    font-size:10px;
-    text-decoration:underline;
+.answer-list {
+    list-style: none;
+}
+
+.auswahlbutton {
+    width: 100px;
+    background: linear-gradient(90deg, rgba(96, 255, 0, 1) 60%, rgba(14, 0, 255, 1) 82%);
+    color: white;
+    height: 50px;
+    font-size: 10px;
+    text-decoration: underline;
     text-decoration-color: white;
 }
-.button{
-    width:300px;
-    height:80px;
+
+.button {
+    width: 300px;
+    height: 80px;
     border-style: dashed;
-    border-color:black;
+    border-color: black;
     background-color: orange;
     position: relative;
     margin: 10px;
-    
+
 }
 
-    
 
-#answer{
+
+#answer {
     position: relative;
 }
 
-.wrapper{
+.wrapper {
     display: flex;
     flex-direction: column;
     margin-left: 150px;
-    }
-.reglererklärung{
+}
+
+.reglererklärung {
     position: relative;
-    font-size:10px;
+    font-size: 10px;
     left: 310px;
-    bottom:30px;
+    bottom: 30px;
 }
 
 
-.spinner_img{
+.spinner_img {
     width: 300px;
     height: 300px;
-    animation:  2s linear infinite wave;
-    border-radius: 50% ;
+    animation: 2s linear infinite wave;
+    border-radius: 50%;
 
 }
- #loader{
+
+#loader {
     width: 100vw;
-    height:100vh;
-    z-index:1;
+    height: 100vh;
+    z-index: 1;
 
-    display: flex; /* Enable flexbox layout */
-    justify-content: center; /* Center the div horizontally */
-    align-items: center; 
-    
+    display: flex;
+    /* Enable flexbox layout */
+    justify-content: center;
+    /* Center the div horizontally */
+    align-items: center;
+
     position: relativ;
- }
+}
 
- #loader-wrapper {
+#loader-wrapper {
     background-color: goldenrod;
     width: 100vw;
     height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
- }
+}
 
 
 
 
-   /* animation: name duration timing-function delay iteration-count direction fill-mode; */
- 
-   #loader-wrapper.hide{
+/* animation: name duration timing-function delay iteration-count direction fill-mode; */
+
+#loader-wrapper.hide {
 
     animation-name: fadeOutUp;
     animation-duration: 2s;
@@ -445,14 +632,15 @@ header{
     animation-timing-function: ease-in;
 }
 
-.nothing{
-    position:relative;
-    left:1000px;
-    top:400px;
+.nothing {
+    position: relative;
+    left: 1000px;
+    top: 400px;
 }
 
 
-html, body{
+html,
+body {
     margin: 0;
     height: 100%;
     width: 100%;
@@ -460,6 +648,7 @@ html, body{
     overflow-y: hidden;
 
 }
+
 /*----------------------------------------------*/
 :root {
     --känguru-skin: #ff9d00;
@@ -481,18 +670,10 @@ html, body{
     border: 5px solid black;
     position: relative;
     right: 400px;
-    top:419px;
+    top: 419px;
 }
 
-.stamm {
-    height: 100%;
-    width: 100px;
-    background: linear-gradient(rgb(204, 102, 0), rgb(102, 51, 0));
-    position: absolute;
-    left:63%;
 
-    transform: skew(-4deg, 0deg);
-}
 
 .koerper2 {
     width: 250px;
@@ -504,21 +685,22 @@ html, body{
     margin-right: 10px;
     margin-left: 10px;
     z-index: 1;
-    left:80px;
-    transform:rotate(20deg);
-    bottom: 100px;;
+    left: 80px;
+    transform: rotate(20deg);
+    bottom: 100px;
+    ;
 
 }
 
 .kängurubeinleft {
     width: 50px;
     height: 150px;
-    background: linear-gradient(0deg, rgba(159,99,3,1) 10%, rgba(255,157,0,1) 52%);
+    background: linear-gradient(0deg, rgba(159, 99, 3, 1) 10%, rgba(255, 157, 0, 1) 52%);
     position: relative;
     left: 77px;
     border-bottom-right-radius: 30%;
     border-bottom-left-radius: 30%;
-    z-index:-1;
+    z-index: -1;
     border-top-left-radius: 40%;
     top: 245px;
 }
@@ -526,61 +708,93 @@ html, body{
 .kängurubeinright {
     width: 50px;
     height: 150px;
-    background: linear-gradient(0deg, rgba(159,99,3,1) 10%, rgba(255,157,0,1) 52%);
+    background: linear-gradient(0deg, rgba(159, 99, 3, 1) 10%, rgba(255, 157, 0, 1) 52%);
     position: relative;
     left: 200px;
     border-bottom-right-radius: 30%;
     border-bottom-left-radius: 30%;
-    z-index:-1;
+    z-index: -1;
     border-top-left-radius: 40%;
     top: 100px;
 }
 
 .känguruarmrechts {
-    width: 50px;
-    height: 150px;
-    background: linear-gradient(0deg, rgba(159,99,3,1) 10%, rgba(255,157,0,1) 52%);
+    width: 20px;
+    height: 100px;
+    background-color: var(--känguru-skin);
     position: relative;
-    left: 200px;
+    left: 330px;
+    bottom: 250px;
     border-bottom-right-radius: 30%;
     border-bottom-left-radius: 30%;
-    z-index:-1;
+    z-index: -1;
     border-top-left-radius: 40%;
-    top: 100px;
+
 }
 
-.koalawinkenderoberarm {
-    width: 40px;
-    height: 110px;
-    background-color: var(--koala-skin);
-    position: absolute;
-    transform: rotate(99deg);
+.kängururechterunterarm {
+    width: 20px;
+    height: 100px;
+    background: linear-gradient(0deg, rgba(255, 157, 0, 1) 10%, rgba(159, 99, 3, 1) 52%);
+    position: relative;
+    left: 373px;
+    ;
+    bottom: 289px;
     border-bottom-right-radius: 30%;
     border-bottom-left-radius: 30%;
-    ;
+    z-index: -1;
     border-top-left-radius: 40%;
-    right: 80%;
-    top: 70%;
-    transform-origin: top left;
-    transform: rotate(130deg) scaleX(-1);
+    transform: rotate(108deg);
+}
+
+.känguruwinkenderunterarm {
+    width: 20px;
+    height: 100px;
+    background-color: var(--känguru-skin);
+    position: relative;
+    left: 60px;
+    ;
+    bottom: 650px;
+    border-bottom-right-radius: 30%;
+    border-bottom-left-radius: 30%;
+    z-index: -1;
+    border-top-left-radius: 40%;
+    transform: rotate(108deg);
+}
+
+.känguruwinkenderoberarm {
+    width: 20px;
+    height: 100px;
+    background: linear-gradient(0deg, rgba(159, 99, 3, 1) 10%, rgba(255, 157, 0, 1) 52%);
+    position: relative;
+    border-bottom-right-radius: 30%;
+    border-bottom-left-radius: 30%;
+    z-index: -1;
+    border-top-left-radius: 40%;
     animation: 2s linear infinite wave;
+    bottom: 505px;
+    transform-origin: top left;
+    transform: rotate(180deg) scaleX(-1);
+    left: 18px;
+
+
 }
 
 @keyframes wave {
     10% {
-        transform: rotate(110deg) scaleX(-1)
+        transform: rotate(160deg) scaleX(-1)
     }
 
     20% {
-        transform: rotate(130deg) scaleX(-1)
+        transform: rotate(180deg) scaleX(-1)
     }
 
     30% {
-        transform: rotate(110deg) scaleX(-1)
+        transform: rotate(160deg) scaleX(-1)
     }
 
     40% {
-        transform: rotate(130deg) scaleX(-1)
+        transform: rotate(180deg) scaleX(-1)
     }
 }
 
@@ -716,9 +930,10 @@ html, body{
 .koala:hover .link {
     text-decoration: underline;
 }
-.link{
-    color:transparent;
- }
+
+.link {
+    color: transparent;
+}
 
 /*animate__shakeX*/
 .Hinweisbauch {
@@ -741,7 +956,11 @@ html, body{
     position: relative;
     bottom: 580px;
     right: 265px;
-    text-decoration:underline;
+    text-decoration: underline;
     color: white;
 
 }
+
+/*--------------------------------*/
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */

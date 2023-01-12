@@ -1,0 +1,31 @@
+.arm{
+    animation : 2s linear infinite wave;
+
+  }
+
+
+  @keyframes wave {
+    10% {
+        transform: rotate(1deg) 
+    }
+
+    20% {
+        transform: rotate(0deg) 
+    }
+
+    30% {
+        transform: rotate(-2deg)
+    }
+
+   
+}
+.hintergrund2{
+    background-image:url('kängurukäfig.jpg') ;
+    background-repeat:no-repeat;
+    background-size: cover;
+
+}
+
+
+
+  /* Small devices (portrait tablets and large phones, 600px and up) */
