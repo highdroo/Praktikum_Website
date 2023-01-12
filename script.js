@@ -1,5 +1,5 @@
 const answerButton = document.getElementById("answer-button");
-var answerElement = document.getElementById("answer");
+const answerElement = document.getElementById("answer");
 var rightanswers = 0;
 answerElement.style.color = "red";
 
@@ -63,12 +63,13 @@ answerButton.addEventListener("click", function () {
             }
         }
     })
+
     setTimeout(() => {
-        alert("Du hast  "+  rightanswers  +" Frage/n richtig beantwortet");
-      }, 200);  
-      
+        alert("Du hast  " + rightanswers + " Frage/n richtig beantwortet");
+    }, 100);
+
     answerElement.innerHTML = "Du hast " + rightanswers + " Frage/n richtig beantwortet";
-    rightanswers = 0 ;
+    rightanswers = 0;
 
 });
 
@@ -144,14 +145,13 @@ randombutton.addEventListener("click", function () {
     clearInterval(interval);
     console.log(regler);
     interval = setInterval(() => {
-        var randomNumber = Math.floor(Math.random() * 5);
+        var randomNumber = Math.floor(Math.random() * 10);
         //  console.log(randomNumber);
 
         hintergrund.style.backgroundColor = colors[randomNumber];
     }, regler.value);
-})
+});
 
 //max 60000
 //min 50
 
-dxeded
