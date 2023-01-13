@@ -69,8 +69,10 @@ answerButton.addEventListener("click", function () {
     }, 100);
 
     answerElement.innerHTML = "Du hast " + rightanswers + " Frage/n richtig beantwortet";
-    rightanswers = 0;
-
+    
+    setTimeout(() => {
+        rightanswers = 0;
+    },200);
 });
 
 

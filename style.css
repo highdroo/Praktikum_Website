@@ -4,156 +4,11 @@
     --koala-pupille: black;
 }
 
-@media only screen and (min-width: 600px) {
 
-    .koala .text,
-    .koala .link {
-        color: black;
-        transition: 2s;
-        animation-name: shakeX;
-        animation-duration: 1s;
-        animation-fill-mode: forwards;
-        animation-timing-function: ease-in;
-    }
-
-    .spalte,
-    .spalte .dumbthings {
-        color: black;
-        transition: 2s;
-        animation-name: pulse;
-        animation-duration: 1s;
-        animation-fill-mode: forwards;
-        animation-timing-function: ease-in;
-    }
-
-    .spalte .dumbthings {
-        color: black;
-        text-decoration: underline;
-    }
-
-    html,
-    body {
-
-        overflow-x: auto !important;
-        overflow-y: auto !important;
-
-    }
-
-    .spalte,
-    .spalte .dumbthings {
-        color: black;
-        transition: 2s;
-        animation-name: pulse;
-        animation-duration: 1s;
-        animation-fill-mode: forwards;
-        animation-timing-function: ease-in;
-    }
-
-    .spalte .dumbthings {
-        color: black;
-        text-decoration: underline;
-    }
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-
-    .koala .text,
-    .koala .link {
-        color: black;
-        transition: 2s;
-        animation-name: shakeX;
-        animation-duration: 1s;
-        animation-fill-mode: forwards;
-        animation-timing-function: ease-in;
-    }
-
-    .spalte,
-    .spalte .dumbthings {
-        color: black;
-        transition: 2s;
-        animation-name: pulse;
-        animation-duration: 1s;
-        animation-fill-mode: forwards;
-        animation-timing-function: ease-in;
-    }
-
-    .spalte .dumbthings {
-        color: black;
-        text-decoration: underline;
-    }
-
-    html,
-    body {
-
-        overflow-x: auto !important;
-        overflow-y: auto !important;
-
-    }
-
-    header {
-        width: 100%;
-    }
-
-    .spalte,
-    .spalte .dumbthings {
-        color: black;
-        transition: 2s;
-        animation-name: pulse;
-        animation-duration: 1s;
-        animation-fill-mode: forwards;
-        animation-timing-function: ease-in;
-    }
-
-    .spalte .dumbthings {
-        color: black;
-        text-decoration: underline;
-    }
-}
-
-
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-
-    .koala .text,
-    .koala .link {
-        color: black;
-        transition: 2s;
-        animation-name: shakeX;
-        animation-duration: 1s;
-        animation-fill-mode: forwards;
-        animation-timing-function: ease-in;
-    }
-
-    .spalte,
-    .spalte .dumbthings {
-        color: black;
-        transition: 2s;
-        animation-name: pulse;
-        animation-duration: 1s;
-        animation-fill-mode: forwards;
-        animation-timing-function: ease-in;
-    }
-    .spalte,
-.spalte .dumbthings
-{
-    color:black;
-    transition:2s;
-    animation-name: pulse;
-    animation-duration: 1s;
-    animation-fill-mode:forwards;
-    animation-timing-function: ease-in;
-}
-
-.spalte:hover .dumbthings{
-    color:black;
-    text-decoration: underline;
-}
     /*------------------------------------------------------------------------------*/
-    .spalte .dumbthings {
+    .spalte  {
         color: black;
-        text-decoration: underline;
+        
     }
 
     html,
@@ -162,7 +17,7 @@
         overflow-x: auto !important;
         overflow-y: auto !important;
     }
-}
+
 
 .hintergrund1 {
     background-image: url('bild-11697h.jpg');
@@ -415,7 +270,7 @@
 }
 
 .link {
-    color: transparent;
+    color:var(--koala-skin);
 }
 
 /*animate__shakeX*/
@@ -502,8 +357,8 @@ header {
 }
 
 .dumbthings {
-    text-decoration: none;
-    color: transparent;
+    text-decoration:none;
+    color:transparent;
 }
 
 .spalte:hover,
@@ -591,7 +446,7 @@ header {
 .spinner_img {
     width: 300px;
     height: 300px;
-    animation: 2s linear infinite wave;
+    animation: 1s linear rotateOut;
     border-radius: 50%;
 
 }
@@ -605,9 +460,7 @@ header {
     /* Enable flexbox layout */
     justify-content: center;
     /* Center the div horizontally */
-    align-items: center;
 
-    position: relativ;
 }
 
 #loader-wrapper {
@@ -625,18 +478,14 @@ header {
 /* animation: name duration timing-function delay iteration-count direction fill-mode; */
 
 #loader-wrapper.hide {
-
+   
     animation-name: fadeOutUp;
     animation-duration: 2s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in;
 }
 
-.nothing {
-    position: relative;
-    left: 1000px;
-    top: 400px;
-}
+
 
 
 html,
@@ -644,322 +493,18 @@ body {
     margin: 0;
     height: 100%;
     width: 100%;
-    overflow-x: hidden;
-    overflow-y: hidden;
+    overflow-x: auto !important;
+    overflow-y: auto !important;
 
+}
+.zentrieren{
+    display:flex;
+    align-items:center;
 }
 
 /*----------------------------------------------*/
-:root {
-    --känguru-skin: #ff9d00;
-    --känguru-eye: white;
-    --känguru-pupille: black;
-}
-
-.hintergrund2 {
-    background-image: url('wjixrc7sn9vb787h9xg4phn5y3e1jzn2.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-
-}
-
-.Känguru {
-    margin: 0 auto;
-    width: 500px;
-    height: 900px;
-    border: 5px solid black;
-    position: relative;
-    right: 400px;
-    top: 419px;
-}
 
 
-
-.koerper2 {
-    width: 250px;
-    height: 500px;
-    border-radius: 50%;
-    background-color: var(--känguru-skin);
-    position: relative;
-    top: 35%;
-    margin-right: 10px;
-    margin-left: 10px;
-    z-index: 1;
-    left: 80px;
-    transform: rotate(20deg);
-    bottom: 100px;
-    ;
-
-}
-
-.kängurubeinleft {
-    width: 50px;
-    height: 150px;
-    background: linear-gradient(0deg, rgba(159, 99, 3, 1) 10%, rgba(255, 157, 0, 1) 52%);
-    position: relative;
-    left: 77px;
-    border-bottom-right-radius: 30%;
-    border-bottom-left-radius: 30%;
-    z-index: -1;
-    border-top-left-radius: 40%;
-    top: 245px;
-}
-
-.kängurubeinright {
-    width: 50px;
-    height: 150px;
-    background: linear-gradient(0deg, rgba(159, 99, 3, 1) 10%, rgba(255, 157, 0, 1) 52%);
-    position: relative;
-    left: 200px;
-    border-bottom-right-radius: 30%;
-    border-bottom-left-radius: 30%;
-    z-index: -1;
-    border-top-left-radius: 40%;
-    top: 100px;
-}
-
-.känguruarmrechts {
-    width: 20px;
-    height: 100px;
-    background-color: var(--känguru-skin);
-    position: relative;
-    left: 330px;
-    bottom: 250px;
-    border-bottom-right-radius: 30%;
-    border-bottom-left-radius: 30%;
-    z-index: -1;
-    border-top-left-radius: 40%;
-
-}
-
-.kängururechterunterarm {
-    width: 20px;
-    height: 100px;
-    background: linear-gradient(0deg, rgba(255, 157, 0, 1) 10%, rgba(159, 99, 3, 1) 52%);
-    position: relative;
-    left: 373px;
-    ;
-    bottom: 289px;
-    border-bottom-right-radius: 30%;
-    border-bottom-left-radius: 30%;
-    z-index: -1;
-    border-top-left-radius: 40%;
-    transform: rotate(108deg);
-}
-
-.känguruwinkenderunterarm {
-    width: 20px;
-    height: 100px;
-    background-color: var(--känguru-skin);
-    position: relative;
-    left: 60px;
-    ;
-    bottom: 650px;
-    border-bottom-right-radius: 30%;
-    border-bottom-left-radius: 30%;
-    z-index: -1;
-    border-top-left-radius: 40%;
-    transform: rotate(108deg);
-}
-
-.känguruwinkenderoberarm {
-    width: 20px;
-    height: 100px;
-    background: linear-gradient(0deg, rgba(159, 99, 3, 1) 10%, rgba(255, 157, 0, 1) 52%);
-    position: relative;
-    border-bottom-right-radius: 30%;
-    border-bottom-left-radius: 30%;
-    z-index: -1;
-    border-top-left-radius: 40%;
-    animation: 2s linear infinite wave;
-    bottom: 505px;
-    transform-origin: top left;
-    transform: rotate(180deg) scaleX(-1);
-    left: 18px;
-
-
-}
-
-@keyframes wave {
-    10% {
-        transform: rotate(160deg) scaleX(-1)
-    }
-
-    20% {
-        transform: rotate(180deg) scaleX(-1)
-    }
-
-    30% {
-        transform: rotate(160deg) scaleX(-1)
-    }
-
-    40% {
-        transform: rotate(180deg) scaleX(-1)
-    }
-}
-
-.koalakopf {
-    width: 200px;
-    height: 150px;
-    border-radius: 50%;
-    background-color: var(--koala-skin);
-    position: relative;
-    top: -40%;
-    margin-right: 10px;
-    margin-left: 10px;
-    z-index: 1;
-}
-
-.koalaaugeleft {
-    width: 20px;
-    height: 20px;
-    border-radius: 100%;
-    background-color: black;
-    position: relative;
-    top: -63%;
-    z-index: 1;
-    left: 54px;
-}
-
-.koalaaugeright {
-    width: 20px;
-    height: 20px;
-    border-radius: 100%;
-    background-color: black;
-    position: relative;
-    top: -68%;
-    z-index: 1;
-    left: 132px;
-}
-
-.koalapurpile {
-    width: 10px;
-    height: 10px;
-    background: radial-gradient(circle, rgba(241, 110, 17, 1) 14%, rgba(171, 98, 42, 1) 70%, rgba(142, 89, 43, 1) 100%);
-    position: relative;
-    top: -72%;
-    border-radius: 50%;
-    right: -138px;
-    z-index: 1;
-}
-
-.koalapurpillelinks {
-    width: 10px;
-    height: 10px;
-    background: radial-gradient(circle, rgba(241, 110, 17, 1) 14%, rgba(171, 98, 42, 1) 70%, rgba(142, 89, 43, 1) 100%);
-    position: relative;
-    top: -74%;
-    border-radius: 50%;
-    right: -60px;
-    z-index: 1;
-
-}
-
-.koalaohren {
-    width: 50px;
-    height: 60px;
-    background: radial-gradient(circle, rgba(125, 125, 125, 1) 49%, rgba(25, 25, 24, 1) 100%);
-    top: -400px;
-    ;
-    position: relative;
-    z-index: -1;
-    border-radius: 50% 50% 0 50%;
-
-
-
-
-}
-
-.koalaohrenright {
-    width: 50px;
-    height: 60px;
-    background: radial-gradient(circle, rgba(125, 125, 125, 1) 49%, rgba(25, 25, 24, 1) 100%);
-    top: -460px;
-    ;
-    position: relative;
-    z-index: -1;
-    border-radius: 50% 50% 50% 0%;
-    left: 170px;
-
-}
-
-.koalanase {
-    width: 40px;
-    height: 60px;
-    background-color: var(--koala-pupille);
-    position: relative;
-    bottom: 100%;
-    z-index: 1;
-    left: 85px;
-    border-radius: 0 0 100% 100%;
-
-
-}
-
-.text {
-    color: red;
-    z-index: 1;
-    position: relative;
-    bottom: 350px;
-    left: 100px;
-    background-color: var(--koala-skin);
-    border: 2px solid var(--koala-skin);
-    width: 20px;
-    text-decoration: none;
-
-}
-
-
-
-.koala .text {
-    color: transparent;
-    text-decoration: none;
-}
-
-.koala:hover .text,
-.koala:hover .link {
-    color: black;
-    transition: 2s;
-    animation-name: shakeX;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-in;
-
-}
-
-.koala:hover .link {
-    text-decoration: underline;
-}
-
-.link {
-    color: transparent;
-}
-
-/*animate__shakeX*/
-.Hinweisbauch {
-    width: 200px;
-    height: 2px;
-    background-color: black;
-    position: relative;
-    bottom: 520px;
-    z-index: 1;
-    transform: rotate(25deg);
-    right: 80px;
-
-}
-
-.Hinweistext {
-    width: 190px;
-    height: 30px;
-    background-color: transparent;
-    border: 2px dashed yellow;
-    position: relative;
-    bottom: 580px;
-    right: 265px;
-    text-decoration: underline;
-    color: white;
-
-}
 
 /*--------------------------------*/
 

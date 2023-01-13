@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="animation.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="einfachso.css">
+    <title>Titel der Seite</title>
+  </head>
+  <body class="seite4">
+    <header class="header3">
+        <h1>Känguru Info Blatt</h1>
+    </header>
+    <div class="spalte show-text">
+        <h1 class="Zwischenüberschrift1">Koala Quiz</h1>
+        <div class="questionblock">
+          <h2>Question 1</h2>
+  
+          <fieldset class="question" name="html-questione-one">Leben koalas in Ost Australien?</fieldset>
+  
+          <ul class="answer-list">
+            <li>
+              <label for="q1-a1">
+  
+                <input type="radio" id="q1-a1" name="q1" value="true">
+                ja
+                </legend>
+              </label>
+            </li>
+            <li>
+              <label for="q1-a2">
+                <input type="radio" id="q1-a2" name="q1" value="false" />
+                nein
+              </label>
+            </li>
+            </fieldset>
+          </ul>
+        </div>
+  
+        <div class="questionblock">
+          <h2>Question 2</h2>
+          <legend>
+            <fieldset class="question" name="html-questione-one">Kan man Koala Fleisch essen?</fieldset>
+          </legend>
+          <ul class="answer-list">
+            <li>
+              <label for="q1-a1">
+  
+                <input type="radio" id="q2-a2" name="q2" value="false">
+                ja
+  
+              </label>
+            </li>
+            <li>
+              <label for="q1-a2">
+                <input type="radio" id="q1-a2" name="q2" value="true" />
+                nein
+              </label>
+            </li>
+            </fieldset>
+          </ul>
+        </div>
+        <div class="questionblock">
+          <h2>Question 3</h2>
+  
+          <fieldset class="question" name="html-questione-one">Gibt es verschieden Arten von Koalas</fieldset>
+  
+          <ul class="answer-list">
+            <li>
+              <label for="q1-a1">
+  
+                <input type="radio" id="q1-a1" name="q3" value="true">
+                ja
+                </legend>
+              </label>
+            </li>
+            <li>
+              <label for="q1-a2">
+                <input type="radio" id="q1-a2" name="q3" value="false" />
+                nein
+              </label>
+            </li>
+            </fieldset>
+          </ul>
+        </div>
+        <p id="answer" name="antworten"></p>
+        <div class="wrapper">
+          <button id="answer-button" class="button">Antworten prüfen</button>
+          <button id="clear" class="button">Antworten entfärben</button>
+        </div>
+        <div>
+          <ul class="answer-list">
+            <li>
+              <label for="q4-q6">
+                <input type="radio" id="q4" name="q5" value="blue">blue
+              </label>
+            </li>
+            <li>
+              <label for="q4-q5">
+                <input type="radio" id="q5" name="q5" value="green">green
+              </label>
+            </li>
+          </ul>
+          <button id="auswahl" class="auswahlbutton">Hintergrund auswählen</button>
+          <button id="weiße" class="auswahlbutton">Hintergrund entfärben</button>
+          <button id="random" class="auswahlbutton">Random Hintergrund(interval)</button>
+          <input type="range" min="60" max="1000" value="50" id="regler">
+          <div class="reglererklärung">
+          <p>Regler zum wechseln der geschwindigkeit</p>
+        </div>
+  
+      </div>
+      <html>
+  <head>
+    <title>GSAP Article Animation</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script>
+      // Mit Hilfe von Viewport.js kann man sich einfach über die Anzeige im Viewport informieren
+      // https://github.com/robflaherty/jquery.viewport
+      var observer = new ViewportObserver();
+      observer.on('enter', '#article-1', function(element) {
+        // Wenn der Artikel im Viewport sichtbar ist, die Animation starten
+        gsap.from(element, { duration: 1, x: -100, opacity: 0 });
+      });
+
+      observer.on('enter', '#article-2', function(element) {
+        gsap.from(element, { duration: 1, x: -100, opacity: 0 });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="article-container">
+      <div class="article" id="article-1">
+        <h2>Article 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.</p>
+      </div>
+      <div class="article" id="article-2">
+        <h2>Article 2</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.</p>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+    <script href="script2.js"></script>
+  </body>
+</html>

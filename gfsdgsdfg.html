@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GSAP Article Animation</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script>
+      // Mit Hilfe von Viewport.js kann man sich einfach über die Anzeige im Viewport informieren
+      // https://github.com/robflaherty/jquery.viewport
+      var observer = new ViewportObserver();
+      observer.on('enter', '#article-1', function(element) {
+        // Wenn der Artikel im Viewport sichtbar ist, die Animation starten
+        gsap.from(element, { duration: 1, x: -100, opacity: 0 });
+      });
+
+      observer.on('enter', '#article-2', function(element) {
+        gsap.from(element, { duration: 1, x: -100, opacity: 0 });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="article-container">
+      <div class="article" id="article-1">
+        <h2>Article 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.</p>
+      </div>
+      <div class="article" id="article-2">
+        <h2>Article 2</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.</p>
+      </div>
+    </div>
+  </body>
+</html>
