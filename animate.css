@@ -46,7 +46,7 @@ nav a {
 .card-section {
     display: flex;
     flex-flow: row wrap;
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
     margin-top: 230px;
     padding-top: 30x;
@@ -56,13 +56,15 @@ nav a {
 
 .text-content {
     flex-grow: 1;
-    text-align: right;
+   text-align:right;
     padding-left: 20px;
     padding-right: 30px;
+    font-size: 13px;;
 }
 
 .reverse .text-content {
     text-align: left;
+    
 }
 
 .reverse {
@@ -96,7 +98,7 @@ nav a {
 .header3 {
     grid-row: 1;
     background-color: orange;
-    width: 96%;
+    width: 99%;
     grid-column: span 3;
     height: 150px;
     display: flex;
@@ -114,7 +116,7 @@ nav a {
     grid-row: 2;
     border:2px black solid;
     margin-top: 40px ;
-    max-height:1000px;
+    height:1000px;
     max-width: 650px;
     margin-left:30px;
 }
@@ -151,4 +153,15 @@ nav a {
 }
 .grid-container{
     grid-column: 1;
+}
+.spaltereihe{
+    height: 1000px;
+    border:2px solid black;
+    width:700px;
+    margin-top:40px;
+}
+.hallobild{
+    width:500px;
+    height: 200px;
+    background-size: cover;
 }
