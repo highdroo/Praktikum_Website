@@ -76,6 +76,8 @@ answerButton.addEventListener("click", function () {
 });
 
 
+
+
 const clearbutton = document.getElementById("clear");
 clearbutton.addEventListener("click", function () {
 
@@ -153,8 +155,3 @@ randombutton.addEventListener("click", function () {
         hintergrund.style.backgroundColor = colors[randomNumber];
     }, regler.value);
 });
-
-//max 60000
-//min 50
-
-gsap.from("img", { duration: 1, x:-100,y:100, opacity: 0, delay: 0, stagger:  0.4  });

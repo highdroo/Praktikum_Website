@@ -322,7 +322,8 @@ header {
     background-color: gray;
     box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 22px 13px 14px 0px rgba(0, 0, 0, 0.35);
     height: 130px;
-
+    margin-left: 20px;
+    margin-right: 20px;;
 }
 
 .startseite {
