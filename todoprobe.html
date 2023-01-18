@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+.green{
+    background-color:greenyellow;
+}
+
+.red{
+    background-color:red;
+}
+    </style>
+</head>
+
+<body>
+    <ul Id="myList" name="myList">
+        <li name="ausgabe">
+        </li>
+
+
+    </ul>
+
+
+    <script>
+        let data = JSON.parse(localStorage.getItem("tasks"));
+
+
+        let html = "";
+
+        data.forEach(element => {
+            var completed ="";
+            if (element.completed == true) {
+                completed = 'green';
+            }else{
+                completed = 'red';
+
+            }
+            html += "<li class='>" + element.task + "</li>";
+            console.log(element.completed);
+            console.log(html);
+           
+        });
+
+    document.getElementById("myList").innerHTML = html;
+
+
+
+
+    </script>
+</body>
+
+</html>

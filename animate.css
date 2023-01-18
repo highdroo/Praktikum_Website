@@ -89,9 +89,10 @@ nav a {
 .seite4 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows:1fr 100%;
+    grid-template-rows:2fr 100%;
     width: 100%;
     height: 100%;
+    place-items: start center;
    
 }
 
@@ -148,11 +149,11 @@ nav a {
 .reglererklärung {
     position: relative;
     font-size: 10px;
-    left: 310px;
-    bottom: 30px;
+    max-width:200px;
 }
 .grid-container{
     grid-column: 1;
+    max-height: 1000px;
 }
 .spaltereihe{
     height: 1000px;
@@ -164,4 +165,9 @@ nav a {
     width:500px;
     height: 200px;
     background-size: cover;
+}
+.butonns2{
+    display: flex;
+    flex-wrap: nowrap;
+    gap:10px;
 }
