@@ -87,7 +87,6 @@
       border-radius: 50%;
       background-color: white;
       border: 1px solid rgb(255, 255, 255);
-      -webkit-appearance: none;
     }
 
     .check:checked {
@@ -120,6 +119,76 @@
       color: rgba(192, 192, 192, 0.8);
       text-decoration: line-through;
     }
+
+    #color-picker {
+      border-radius: 50%;
+      fill-opacity: 1;
+      max-width: 50px;
+      background-color: transparent;
+      color:white;
+
+    }
+    .deadline{
+      max-width: 150px;
+    }
+    .katogorie{
+      background-color:#3a4674;
+      border:black 2px solid;
+    }
+
+
+    /*--------------------*/
+
+.container2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+label {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/*------ Style 1 ------*/
+#style1 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+#style1::-webkit-color-swatch {
+  border-radius: 50%;
+  border: none;
+}
+#style1::-moz-color-swatch {
+  border-radius:50%;
+  border: none;
+}
+
+/*------ Style 2 ------*/
+#style2 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  width: 80px;
+  height: 80px;
+  border: none;
+  cursor: pointer;
+}
+#style2::-webkit-color-swatch {
+  border-radius: 50%;
+  border: 3px solid #000000;
+}
+#style2::-moz-color-swatch {
+  border-radius: 50%;
+  border: 3px solid #000000;
+}
   </style>
 </head>
 
@@ -129,37 +198,53 @@
       <h1>TO DO LIST</h1>
       <form>
         <input type="text" placeholder="Add new task...">
+        <div class="container2">
+          <input type="color" value="#ffb721" id="style2" />
+        </div>
+        <input type="date" id="deadline" class="deadline">
+        <select id="kategorieaus" class="katogorie">
+          <option value="true" name="q1">undrigend</option>
+          <option value="false" name="q1">dringend</option>
+        </select>
         <button type="submit">&plus;</button>
       </form>
       <ul></ul>
     </div>
   </div>
+
+  <li>
+    <input>
+  </li>
   <script>
     // On app load, get all tasks from localStorage
     window.onload = loadTasks;
 
-    // On form submit add task
+
+
     document.querySelector("form").addEventListener("submit", e => {
-      e.preventDefault();q
+      e.preventDefault();
       addTask();
     });
 
     function loadTasks() {
-      // check if localStorage has any tasks
-      // if not then return
+
       if (localStorage.getItem("tasks") == null) return;
 
-      // Get the tasks from localStorage and convert it to an array
+
       let tasks = Array.from(JSON.parse(localStorage.getItem("tasks")));
 
-      // Loop through the tasks and add them to the list
       tasks.forEach(task => {
         const list = document.querySelector("ul");
         const li = document.createElement("li");
-        li.innerHTML = `<input type="checkbox" onclick="taskComplete(this)" class="check" ${task.completed ? 'checked' : ''}>
-          <input type="text" value="${task.task}" class="task ${task.completed ? 'completed' : ''}" onfocus="getCurrentTask(this)" onblur="editTask(this)">
-          <span>${document.getElementById("DatumUndZeit").value = new Date().toLocaleString('de-DE')}</span>a
-          <i class="fa fa-trash" onclick="removeTask(this)"></i>`;
+        li.id = "egal";
+        li.innerHTML = `<input type="checkbox" onclick="taskComplete(this)" class="check"  ${task.completed ? 'checked' : ''}>
+          <input type="text" value="${task.task}" class="task ${task.completed ? 'completed' : ''}" onfocus="getCurrentTask(this)" onblur="editTask(this)" >
+          <span>${task.katogorie}</span>
+          <span>${task.date}</span>  
+          <span></span> 
+          <span>${task.deadline}</span> 
+          
+          <i class="fa fa-trash" onclick="removeTask(this)" ${li.style.backgroundColor = addcolor()}></i>`;
         list.insertBefore(li, list.children[0]);
       });
     }
@@ -178,13 +263,25 @@
         return false;
       }
 
+         // check if date is set
+         if ( document.getElementById("deadline").value == '') {
+        alert("Bitte datum abnbgevbeb!");
+        return false;
+      }
+
       // add task to local storage
-      localStorage.setItem("tasks", JSON.stringify([...JSON.parse(localStorage.getItem("tasks") || "[]"), { task: task.value, completed: false }]));
+      localStorage.setItem("tasks", JSON.stringify([...JSON.parse(localStorage.getItem("tasks") || "[]"), { task: task.value, completed: false, date: new Date().toLocaleString('de-DE'), katogorie: addkattegorie(), farbe: addcolor(), deadline: adddeadline()}]));
 
       // create list item, add innerHTML and append to ul
       const li = document.createElement("li");
+      li.style.backgroundColor = addcolor();
+
       li.innerHTML = `<input type="checkbox" onclick="taskComplete(this)" class="check">
       <input type="text" value="${task.value}" class="task" onfocus="getCurrentTask(this)" onblur="editTask(this)">
+      <span>${new Date().toLocaleString('de-DE')}</span>
+      <span>${addkattegorie()}</span>
+      <span>${addcolor()}</span>
+      <span>${adddeadline()}</span>
       
       <i class="fa fa-trash" onclick="removeTask(this)"></i>`;
       list.insertBefore(li, list.children[0]);
@@ -192,11 +289,43 @@
       task.value = "";
     }
 
+    function addkattegorie() {
+      const auswahl = document.getElementById("kategorieaus");
+
+
+      if (auswahl.value == "true") {
+
+        return "undringend";
+      }
+      else {
+        return "dringend";
+
+      }
+    }
+    function addcolor() {
+
+      var selectedColor = document.getElementById("style2").value;
+      console.log(selectedColor);
+      return selectedColor;
+      input.style.backgroundColor = selectedColor;
+    }
+
+    function adddeadline() {
+      var deadline = document.getElementById("deadline");
+      console.log( new Date(deadline.value).toLocaleString('de-DE') );
+      return  new Date(deadline.value).toLocaleString('de-DE');
+
+    }
+
+    
+
+
+
     function taskComplete(event) {
       let tasks = Array.from(JSON.parse(localStorage.getItem("tasks")));
-      tasks.forEach(task => {
-        if (task.task === event.nextElementSibling.value) {
-          task.completed = !task.completed;
+      tasks.forEach(x => {
+        if (x.task === event.nextElementSibling.value) {
+          x.completed = !x.completed;
         }
       });
       localStorage.setItem("tasks", JSON.stringify(tasks));
