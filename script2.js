@@ -18,13 +18,17 @@ koala.addEventListener("click", function () {
 
 
 
-window.onload = function() {
+window.onload = function () {
     setTimeout(() => {
-      document.getElementById("loader-wrapper").className = "hide";
+        document.getElementById("loader-wrapper").className = "hide";
     }, 400);
-  }
+    setTimeout(() => {
+            alert("Da wir eine bestimmte Anzahl an Seiten bekommen haben und ich schon die max Anzahl überschritten habe schreibe ich meine Erwartungen einfach hier also ich hatte eigentlich nur 2 Erwartungen und zwar erstens das ich mehr zu css und java script lerne und zu sehen wie it firmen arbeiten")
+        }, 500);
+    }
 
-  const answerButton = document.getElementById("answer-button");
+
+const answerButton = document.getElementById("answer-button");
 const answerElement = document.getElementById("answer");
 var rightanswers = 0;
 answerElement.style.color = "red";
@@ -95,10 +99,10 @@ answerButton.addEventListener("click", function () {
     }, 100);
 
     answerElement.innerHTML = "Du hast " + rightanswers + " Frage/n richtig beantwortet";
-    
+
     setTimeout(() => {
         rightanswers = 0;
-    },200);
+    }, 200);
 });
 
 
@@ -179,4 +183,5 @@ randombutton.addEventListener("click", function () {
         hintergrund.style.backgroundColor = colors[randomNumber];
     }, regler.value);
 });
+
 
